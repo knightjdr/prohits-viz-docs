@@ -1,0 +1,23 @@
+{
+  "name": "prohits-viz-docs",
+  "version": "0.1.0",
+  "description": "Documentation for ProHits-viz",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knightjdr/prohits-viz-docs.git"
+  },
+  "author": "James D R Knight",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/knightjdr/prohits-viz-docs/issues"
+  },
+  "homepage": "https://github.com/knightjdr/prohits-viz-docs#readme",
+  "devDependencies": {
+    "markdown-pdf": "^9.0.0",
+    "showdown": "^1.8.6"
+  }
+}
