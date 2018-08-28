@@ -1,0 +1,14 @@
+{
+    "env": {
+      "browser": true,
+      "jasmine": true,
+      "jest": true
+    },
+    "extends": "airbnb",
+    "rules": {
+      "function-paren-newline": "off",
+      "no-underscore-dangle": "off",
+      "react/jsx-filename-extension": [1, {"extensions": [".js"]}]
+    }
+  }
+  
