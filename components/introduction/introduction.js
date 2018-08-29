@@ -1,6 +1,6 @@
 import React from 'react';
 
-const introduction = () => (
+const Introduction = () => (
   <article>
     <p>
 ProHits-viz is a suite of web tools designed principally to aid visualizing
@@ -17,4 +17,4 @@ a question not covered by this guide, feel free to contact us at
   </article>
 );
 
-export default introduction;
+export default Introduction;

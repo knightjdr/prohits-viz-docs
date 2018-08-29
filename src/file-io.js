@@ -11,12 +11,11 @@ const file = {
       });
     })
   ),
-  writeFile: (location, rootDir, component) => (
+  writeFile: (filename, component) => (
     new Promise((resolve, reject) => {
-      const dest = `${rootDir}/${location}.js`;
-      fs.outputFile(dest, component, (err) => {
+      fs.outputFile(filename, component, (err) => {
         if (!err) {
-          resolve(dest);
+          resolve(filename);
         }
         reject(err);
       });

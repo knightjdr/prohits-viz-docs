@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/knightjdr/prohits-viz-docs#readme",
   "dependencies": {
+    "enzyme": "^3.5.0",
     "fs-extra": "^7.0.0",
     "markdown-pdf": "^9.0.0",
     "react": "^16.4.2",

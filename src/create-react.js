@@ -1,27 +1,20 @@
-/* eslint-disable no-console */
-
-const convertText = require('./convert-text');
-const fileIO = require('./file-io');
-const fixFile = require('./fix-file');
 const help = require('./help-modules');
+const moduleInterface = require('./module-interface');
 
-const rootDirs = {
+const dirs = {
   md: './md',
   react: './components',
 };
 
-const createComponent = (def) => {
-  fileIO.readFile(`${rootDirs.md}/${def.location}.md`)
-    .then((text) => {
-      const component = convertText(def.location, text);
-      return fileIO.writeFile(def.location, rootDirs.react, component);
-    })
-    .then(dest => (
-      fixFile(dest)
-    ))
-    .catch((err) => {
-      console.log(`Error on file ${def.location}: ${err}`);
+const interateDef = (helpModule, rootDirs) => {
+  moduleInterface(helpModule, rootDirs);
+  if (helpModule.children) {
+    helpModule.children.forEach((childModule) => {
+      interateDef(childModule, rootDirs);
     });
+  }
 };
 
-createComponent(help[0]);
+help.forEach((helpModule) => {
+  interateDef(helpModule, dirs);
+});

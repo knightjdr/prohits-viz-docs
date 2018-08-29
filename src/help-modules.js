@@ -15,10 +15,10 @@ const helpModules = [
     location: 'tools/tools',
     linkText: 'Tools',
     route: '/help/tools',
-    panelText: 'Tools',
+    title: 'Tools',
     children: [
       {
-        component: 'tools/dotplot',
+        location: 'tools/dotplot',
         linkText: 'Dot plot',
         route: '/help/tools/dotplot',
         title: 'Dot plot',
