@@ -1,5 +1,5 @@
 const help = require('./help-modules');
-const moduleInterface = require('./module-interface');
+const reactInterface = require('./react-interface');
 
 const dirs = {
   md: './md',
@@ -7,7 +7,7 @@ const dirs = {
 };
 
 const interateDef = (helpModule, rootDirs) => {
-  moduleInterface(helpModule, rootDirs);
+  reactInterface(helpModule, rootDirs);
   if (helpModule.children) {
     helpModule.children.forEach((childModule) => {
       interateDef(childModule, rootDirs);

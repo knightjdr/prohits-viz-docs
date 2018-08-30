@@ -3,22 +3,24 @@ const fs = require('fs-extra');
 const file = {
   readFile: location => (
     new Promise((resolve, reject) => {
-      fs.readFile(location, (err, text) => {
-        if (!err) {
+      fs.readFile(location)
+        .then((text) => {
           resolve(text.toString());
-        }
-        reject();
-      });
+        })
+        .catch((err) => {
+          reject(err);
+        });
     })
   ),
-  writeFile: (filename, component) => (
+  writeFile: (filename, component, options = {}) => (
     new Promise((resolve, reject) => {
-      fs.outputFile(filename, component, (err) => {
-        if (!err) {
+      fs.outputFile(filename, component, options)
+        .then(() => {
           resolve(filename);
-        }
-        reject(err);
-      });
+        })
+        .catch((err) => {
+          reject(err);
+        });
     })
   ),
 };

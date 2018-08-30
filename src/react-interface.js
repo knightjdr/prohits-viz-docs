@@ -6,7 +6,7 @@ const generateTest = require('./generate-test');
 const getModuleName = require('./module-name');
 const fixFile = require('./fix-file');
 
-const moduleInterface = (def, rootDirs) => {
+const reactInterface = (def, rootDirs) => {
   const moduleName = getModuleName(def.location);
   fileIO.readFile(`${rootDirs.md}/${def.location}.md`)
     .then((text) => {
@@ -28,4 +28,4 @@ const moduleInterface = (def, rootDirs) => {
     });
 };
 
-module.exports = moduleInterface;
+module.exports = reactInterface;
