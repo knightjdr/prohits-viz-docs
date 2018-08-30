@@ -5,3 +5,9 @@ body {
 p {
   text-align: justify;
 }
+a[href]:after {
+  content: "";
+}
+h2 {
+  text-decoration: underline;
+}

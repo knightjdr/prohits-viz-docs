@@ -8,6 +8,7 @@ const generatePDF = (mdFile, dest) => {
       remarkable: {
         breaks: false,
       },
+      runningsPath: './hf-config.js',
     }))
     .pipe(fs.createWriteStream(dest));
 };
