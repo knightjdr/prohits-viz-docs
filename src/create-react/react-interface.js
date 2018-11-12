@@ -3,7 +3,7 @@
 const fileIO = require('./file-io');
 const generateHTML = require('./generate-html');
 const generateTest = require('./generate-test');
-const getModuleName = require('./module-name');
+const getModuleName = require('../module-name');
 const fixFile = require('./fix-file');
 
 const reactInterface = (def, rootDirs) => {

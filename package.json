@@ -19,6 +19,7 @@
   "dependencies": {
     "enzyme": "^3.5.0",
     "fs-extra": "^7.0.0",
+    "json5": "^2.1.0",
     "markdown-pdf": "^9.0.0",
     "react": "^16.4.2",
     "showdown": "^1.8.6"

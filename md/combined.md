@@ -46,6 +46,11 @@ see the references and links below:
 * [GalaxyP](https://usegalaxyp.org/)
 
 
+## Recommendations
+
+Recommendations
+
+
 ## Tools
 
 Tools
@@ -95,5 +100,30 @@ option, if selected. Finally, the "results" folder will also contain
 a log file the contains information on the input parameters that were
 selected for the user's future reference (e.g. to assist with writing
 the Methods section for a manuscript).
+
+
+## Visualization
+
+Visualization
+
+
+## File format
+
+File format
+
+
+## Heatmap
+
+Heat map
+
+
+## Save
+
+Save
+
+
+## Archive
+
+Archive
 
 

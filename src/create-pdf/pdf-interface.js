@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 const fixLinks = require('./fix-links');
-const getModuleName = require('./module-name');
+const getModuleName = require('../module-name');
 
 /* All tasks are done synchronously to ensure the proper merge order
 ** of the markdown files. */
