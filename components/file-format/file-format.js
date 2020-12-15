@@ -3,20 +3,20 @@ import React from 'react';
 const FileFormat = () => (
   <article>
     <p>
-ProHits-viz requires tabular input files in either tab-delimited or csv format.
-At a minimum, the file must contain four columns specifying the bait/condition,
-prey/readout, abundance measure (spectral count, intensity, etc) and a
-confidence metric (e.g. FDR). Explicity support is provided for files output
-from SAINT and CRAPome/Reprint. If you are the maintainer of another tool
-and would like us to support your ouput, please let us know. Datasets from
-unsupported tools can still be used provided they meet the tabular format
-criteria mentioned above, however, you will have to specifiy the columns
-to use as they cannot be automatically recognized.
+      ProHits-viz requires tabular input files in either tab-delimited or csv format.
+      At a minimum, the file must contain four columns specifying the bait/condition,
+      prey/readout, abundance measure (spectral count, intensity, etc) and a
+      confidence metric (e.g. FDR). Explicity support is provided for files output
+      from SAINT and CRAPome/Reprint. If you are the maintainer of another tool
+      and would like us to support your ouput, please let us know. Datasets from
+      unsupported tools can still be used provided they meet the tabular format
+      criteria mentioned above, however, you will have to specifiy the columns
+      to use as they cannot be automatically recognized.
     </p>
     <h3>Sample files</h3>
     <p>
-For detailed information on tools that generate compatible input for ProHits-viz,
-see the references and links below:
+      For detailed information on tools that generate compatible input for ProHits-viz,
+      see the references and links below:
     </p>
     <p><strong>Publications</strong></p>
     <ul>

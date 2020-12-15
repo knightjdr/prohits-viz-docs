@@ -1,4 +1,3 @@
-
 const JSON5 = require('json5');
 
 const fileIO = require('./file-io');

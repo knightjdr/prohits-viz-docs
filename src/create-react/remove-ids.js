@@ -1,4 +1,4 @@
-const removeIds = text => (
+const removeIds = (text) => (
   text.replace(/ id="[^"]*"/g, '')
 );
 

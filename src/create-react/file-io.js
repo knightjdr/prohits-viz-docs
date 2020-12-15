@@ -1,7 +1,7 @@
 const fs = require('fs-extra');
 
 const file = {
-  readFile: location => (
+  readFile: (location) => (
     new Promise((resolve, reject) => {
       fs.readFile(location)
         .then((text) => {

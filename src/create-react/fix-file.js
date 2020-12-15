@@ -1,6 +1,6 @@
 const { spawn } = require('child_process');
 
-const fixFile = dest => (
+const fixFile = (dest) => (
   new Promise((resolve, reject) => {
     const process = spawn(
       './node_modules/.bin/eslint',
